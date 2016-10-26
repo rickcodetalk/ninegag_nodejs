@@ -3,7 +3,7 @@ var router = express.Router();
 
 const cassandra = require('cassandra-driver');
 //const client = new cassandra.Client({ contactPoints: ['10.0.1.76'], keyspace: 'ninegag'});
-const client = new cassandra.Client({ contactPoints: ['10.164.6.78,10.165.2.217'], keyspace: 'ninegag'});
+const client = new cassandra.Client({ contactPoints: ['10.164.6.78','10.165.2.217'], keyspace: 'ninegag'});
 
 /* GET home page. */
 router.get('/empty', function(req, res, next) {
